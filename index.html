@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> JavaScript Assignment </title>
+        <script type = "text/javascript" src = "script.js"> </script>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <h2> Dummy Data </h2>
+        <div id = "filter">
+        Select the field by which you want to filter the data: 
+        <select onchange = "changeSelectValue(value)" id = "selectId">
+            <option value = "none" class = "filterOption"> select </option>
+            <option value = "userId" class = "filterOption"> User Id </option>
+            <option value = "id" class = "filterOption"> Id </option>
+            <option value = "title" class = "filterOption"> Title </option>
+            <option value = "body" class = "filterOption"> Body </option>
+        </select>
+        <input type="text" id = "inputTagId" placeholder = "Enter value here"
+        onchange = "changeInputValue(value)">
+    </div>
+        <br><br>
+        <table id = "filterdTable">
+            <tr>
+                <th> User Id </th>
+                <th> Id </th>
+                <th> Title </th>
+                <th> Body </th>
+            </tr>
+            <tr id = "filterdData">    
+            </tr>
+        </table>
+    </body>
+</html>
